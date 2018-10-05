@@ -1,1 +1,605 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: wheat;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CD8C37;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: saddlebrown;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container-fluid{
+  overflow: hidden;
+}
+
+header{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background: url("./assets/images/HeadlineImage_1.jpg") no-repeat;
+  background-size: 100% 100%;
+  text-align:center;
+  font-size: 3vw;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 15%;
+}
+
+.checks{
+  color: #412d12;
+}
+.head-grad{
+  background-image: linear-gradient(to right, rgba(196,154,108,0), rgba(212,204,201,0.8), rgba(212,204,201,1),  rgba(212,204,201,0.8), rgba(196,154,108, 0));
+  font-size: 5.2vw;
+  font-weight: bolder;
+  color: #bd2226;
+}
+
+.banner-header{
+  font-size: 2vw;
+  font-family: 'Open Sans', sans-serif;
+  margin-left:10%;
+  font-weight:bolder;
+  height:auto;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.banner-main{
+  background-image: linear-gradient(to right, rgba(196,154,108,0), rgba(212,204,201,0.8), rgba(211,181,157,1),  rgba(212,204,201,0.8), rgba(196,154,108, 0));
+  font-size: 2vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bolder;
+  height:auto;
+  margin-top:2%;
+  margin-bottom:2%;
+  float: left;
+  width: 100%;
+  padding-top:3%;
+  padding-bottom: 2%;
+}
+
+.banner-pic{
+  text-align: center;
+  float: left;
+  width:30%;
+  margin-left:3%;
+}
+
+.banner-pic img{
+  width:80%;
+}
+
+.banner-text{
+  font-family: 'Open Sans', sans-serif;
+  color: #412d12;
+  font-weight: bolder;
+  text-align: center;
+  float: left;
+  width:30%;
+  margin-left:3%;
+}
+
+.body1{
+  margin-left:10%;
+  margin-right:10%;
+  font-size:1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.banner2{
+  background: url("assets/images/ParallaxOne_5.jpg");
+  background-size: 100% 150%;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 8px #555555;
+}
+
+.banner2-header{
+  width:73%;
+  padding-left:5%;
+  padding-top: 10%;
+}
+
+.banner2-body{
+  width:60%;
+  padding-left:5%;
+  padding-top: 3%;
+  padding-bottom:5%;
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.banner2 h3{
+  font-size: 3.7vw;
+  font-weight: bolder;
+
+}
+
+.banner3{
+  width:85%;
+  height:70%;
+  background: #3d1b0f;
+  margin-top:8%;
+}
+
+.banner3 img{
+  margin-top:-10%;
+  width: 100%;
+}
+
+.banner3-pic{
+  width: 40%;
+  float:left;
+}
+.banner3-info{
+  width: 40%;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 3%;
+  float:left;
+  font-size: 1.7vw;
+  color:white;
+}
+
+.banner4 {
+  background: linear-gradient(
+    rgba(166, 31, 39, 0.25),
+    rgba(166, 31, 39, 0.25)
+  ), url("assets/images/Gears_15.jpg");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  width: 100%;
+  font-size: 1.7vw;
+  color: white;
+  padding: 3% 10%;
+}
+
+.banner4 h1{
+  color:#FFCD2F;
+  font-size: 2.8vw;
+  margin-bottom: 3%;
+}
+
+.pic1{
+  width:100%;
+  text-align: center;
+}
+.pic1 img {
+  width: 60%;
+}
+
+footer{
+  background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.6), rgba(255,255,255,0)), url("/assets/images/TransparentArrowBkgd.jpg") no-repeat left bottom;
+  background-size: 250% 100%;
+  height: auto;
+}
+
+footer::before{
+  content: '';
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6;
+}
+
+.footer-wrapper{
+  width: 80%;
+  margin: 0 auto !important;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.footer-wrapper2{
+  width: 80%;
+  margin: 0 auto !important;
+  padding-bottom: 3%;
+}
+
+.footer-body1{
+  padding-right: 3%;
+  padding-left: 2%;
+  background: rgba(255,255,255,0.9);
+  float:left;
+  width:100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size:1.5vw;
+}
+
+.footer-body2{
+  padding-right: 3%;
+  padding-left: 2%;
+  background: rgba(255,255,255,0.89);
+  float:left;
+  width:100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.5vw;
+  font-weight: 600;
+  padding-top: 3%;
+}
+
+.footer-body1 h3{
+  font-size:2.5vw;
+}
+.footer-pic1{
+  float:right;
+  width:25%;
+  margin-right: 18%;
+}
+
+.footer-pic1 img{
+  width:100%;
+}
+
+
+.footer-banner1-container{
+  width:80%;
+  margin:0 auto !important;
+}
+
+.footer-banner1{
+  padding-top:3%;
+  padding-bottom:3%;
+  width:100%;
+  float:left;
+  height:auto;
+  background: #485f42;
+}
+.footer-banner-pic{
+  width:100%;
+}
+
+.footer-banner-pic img{
+  width:100%;
+}
+
+.footer-banner-text{
+  color:white;
+  width:34%;
+  float:left;
+  font-size:1.7vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bolder;
+  background: #485f42;
+  text-align:center;
+  margin-top:3%;
+}
+
+.footer-banner-text h3{
+  font-size:10.5vw;
+  color: #F9D63F;
+  font-weight:bolder;
+  line-height: 75%
+
+}
+
+.footer-banner-text h4{
+  font-size:5.2vw;
+  color: white;
+  font-weight:bolder;
+  padding-bottom: 9%;
+}
+
+.footer-arrow{
+  width: 80%;
+  margin:0 auto !important;
+  text-align: center;
+  padding-bottom:20px;
+}
+
+.footer-arrow img{
+  width: 98%;
+  margin-top: 0;
+}
+
+.footer-button{
+  width:40%;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+.footer-button button{
+  background: #E47E25;
+  border: white 5px solid;
+  color: white;
+  width: 100%;
+  font-size:3.7vw;
+  padding-top: 4%;
+  line-height: 55%;
+  font-weight: bold;
+
+}
+
+.small-button-text{
+  color: black;
+  width: 50%;
+  font-size:1vw;
+}
+
+.the-end{
+  width:40%;
+  margin: 0 auto !important;
+  color:white;
+  padding-top:1%;
+  text-align:center;
+  font-size: 1vw;
+}
+
+.the-end a{
+  color: #2aa165;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+
+@keyframes cart {
+  from {visibility: hidden; opacity: 0}
+  to {visibility: visible; opacity: 1}
+}
+
+@keyframes closeFrame {
+  from {visibility: visible; opacity: 1}
+  to {visibility: hidden; opacity: 0}
+}
+
+#whiteout{
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height:100%;
+  background: rgba(0,0,0, 0.8);
+}
+
+#cart{
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+}
+
+#cartInnerPic{
+  width:50%;
+  position:fixed;
+  top: 15%;
+  left: 22.5%;
+  margin: 0 auto !important;
+  color: white;
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#cartInner{
+  width:50%;
+  position:fixed;
+  top: 30%;
+  left: 22.5%;
+  margin: 0 auto !important;
+  color: white;
+  font-size: 3vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#button1{
+  position:fixed;
+  top: 40%;
+  left: 20%;
+  width:25%;
+  background: #2aa165;
+  margin: auto 0 !important;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 3vw;
+  color:white;
+  text-align: center;
+  border: darkgreen 0.2vw solid;
+  font-weight: bolder;
+}
+
+#button2{
+  position:fixed;
+  top: 40%;
+  left: 50%;
+  width:25%;
+  background: dodgerblue;
+  margin: auto 0 !important;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 3vw;
+  color:white;
+  text-align: center;
+  border: mediumblue 0.2vw solid;
+  font-weight: bolder;
+}
+
+#close-button{
+  position:fixed;
+  top: 1%;
+  right: 1%;
+  width:8%;
+  background: red;
+  padding-top: 1.3%;
+  padding-bottom: 1.3%;
+  font-size: 3.2vw;
+  color:white;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  #cartInnerPic{
+    width:50%;
+    top: 24%;
+    font-size: 5vw;
+
+  }
+
+  #cartInner{
+    width:50%;
+    top: 32%;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-arrow{
+    width: 78%;
+  }
+
+  #cartInnerPic{
+    width:50%;
+    top: 27%;
+    font-size: 5vw;
+
+  }
+
+  #cartInner{
+    width:50%;
+    top: 34%;
+    font-size: 3vw;
+  }
+}
+@media (max-width: 668px) {
+  .footer-button button{
+    border: white 3px solid;
+  }
+  .the-end{
+    width:80%;
+    font-size: 2vw;
+  }
+
+  .the-end a{
+    font-size: 2.2vw;
+    font-weight: bolder;
+  }
+
+  #cartInnerPic{
+    width:50%;
+    top: 27%;
+    font-size: 6vw;
+
+  }
+
+  #cartInner{
+    width:50%;
+    top: 34%;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+
+  footer{
+    background-size: 220% 50%;
+  }
+
+  .footer-body1{
+    font-size:3vw;
+  }
+  .footer-body2{
+    font-size:3vw;
+  }
+  .banner4{
+    background-size:  100% 100%;
+    font-size:3vw;
+  }
+  .banner4 h1{
+    font-size:3.5vw;
+  }
+
+  .footer-button{
+    width:60%;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .footer-button button{
+    border: white 2px solid;
+    font-size:5.7vw;
+  }
+
+  .small-button-text{
+    color: black;
+    width: 50%;
+    font-size:2vw;
+  }
+
+  .footer-arrow{
+    width: 75%;
+  }
+
+  .footer-arrow img{
+    width: 98%;
+    margin-top: 0;
+  }
+
+  #cartInnerPic{
+    width:50%;
+    top: 26%;
+    font-size: 7vw;
+
+  }
+
+  #cartInner{
+    width:50%;
+    top: 32%;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 330px) {
+  .body1{
+    font-size: 3vw;
+  }
+  .footer-body2 {
+    font-size: 3vw;
+    margin-bottom: -1px;
+  }
+  #cartInnerPic{
+    top: 27%;
+    font-size: 7vw;
+
+  }
+
+  #cartInner{
+    top: 31%;
+    font-size: 5vw;
+  }
+}
